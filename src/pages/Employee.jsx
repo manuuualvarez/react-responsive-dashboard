@@ -1,7 +1,9 @@
 import React from 'react'
-import { GridComponent, ColumnsDirective, ColumnDirective, Page, Search, Toolbar, ExcelExport, PdfExport, Edit, Inject } from '@syncfusion/ej2-react-grids';
-import { employeesData, employeesGrid } from '../data/dummy';
+import { GridComponent, ColumnsDirective, ColumnDirective, Page, Search, Toolbar, Inject } from '@syncfusion/ej2-react-grids';
+
 import { Header } from '../components';
+
+import { employeesData, employeesGrid } from '../data/dummy';
 
 
 const Employee = () => {
