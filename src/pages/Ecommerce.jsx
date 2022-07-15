@@ -20,7 +20,9 @@ const Ecommerce = () => {
 
   return (
     <div className="mt-24">
+      {/* Header */}
       <div className="flex flex-wrap lg:flex-nowrap justify-center ">
+        {/* Background Header */}
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center">
           <div className="flex justify-between items-center">
             <div>
@@ -38,12 +40,13 @@ const Ecommerce = () => {
           <div className="mt-6">
             <Button
               color="white"
-              bgColor={currentColor}
+              bgColor="blue"
               text="Download"
               borderRadius="10px"
             />
           </div>
         </div>
+        {/* Earning Cards */}
         <div className="flex m-3 flex-wrap justify-center gap-1 items-center">
           {earningData.map((item) => (
             <div key={item.title} className="bg-white h-44 dark:text-gray-200 dark:bg-secondary-dark-bg md:w-56  p-4 pt-9 rounded-2xl ">
@@ -65,8 +68,10 @@ const Ecommerce = () => {
           ))}
         </div>
       </div>
-
+      
+      {/* Revenue Updates */}
       <div className="flex gap-10 flex-wrap justify-center">
+        {/* Revenue Header */}
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780  ">
           <div className="flex justify-between">
             <p className="font-semibold text-xl">Revenue Updates</p>
@@ -85,11 +90,9 @@ const Ecommerce = () => {
               </p>
             </div>
           </div>
-
-            {/* Revenue Updates */}
           <div className="mt-10 flex gap-10 flex-wrap justify-center">
             <div className=" border-r-1 border-color m-4 pr-10">
-
+              {/* Budget Section*/}
               <div>
                 <p>
                   <span className="text-3xl font-semibold">$93,438</span>
@@ -99,13 +102,12 @@ const Ecommerce = () => {
                 </p>
                 <p className="text-gray-500 mt-1">Budget</p>
               </div>
-
+              {/* Expense Section*/}
               <div className="mt-8">
                 <p className="text-3xl font-semibold">$48,487</p>
                 <p className="text-gray-500 mt-1">Expense</p>
               </div>
-
-              
+              {/* Spark Chart */}
               <div className="mt-5">
                 <SparkLine 
                   currentColor="blue" 
@@ -117,18 +119,18 @@ const Ecommerce = () => {
                   color="blue" 
                 />
               </div>
-
               <div className="mt-10">
                 <Button
                   color="white"
-                  bgColor={currentColor}
+                  bgColor="blue"
                   text="Download Report"
                   borderRadius="10px"
                 />
               </div>
             </div>
+            {/* Stacked Section Bar Chart */}
             <div>
-              <Stacked currentMode={currentMode} width="320px" height="360px" />
+              <Stacked width="320px" height="360px" />
             </div>
           </div>
 
